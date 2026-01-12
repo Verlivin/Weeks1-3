@@ -14,5 +14,6 @@ public class Circle : MonoBehaviour
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         transform.position = mousePos;
+        
     }
 }
