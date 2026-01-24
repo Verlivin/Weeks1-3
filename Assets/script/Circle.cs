@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using static UnityEditor.PlayerSettings;
 
 public class Circle : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class Circle : MonoBehaviour
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        transform.position = mousePos;
+		transform.position = mousePos;
         
-    }
 }
+    }
